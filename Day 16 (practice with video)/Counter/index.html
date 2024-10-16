@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="number" class="number" :value="number">{{number}}</div>
+
+      <div id="buttons" class="buttons">
+        <button id="minus" class="minus" @click="minus ">-</button>
+        <button id="plus" class="plus" @click="plus">+</button>
+      </div>
+      <div>{{test()}}</div>
+    </div>
+
+    <script src="vue.js"></script>
+  </body>
+</html>
