@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="" class="inpBtn">
+
+        <!-- <input id="input" @input="update" :value="active"/> -->
+<!-- BU CÜR YAZMAQ DA OLAR. AMMA DAHA QISA ŞƏKİLDƏ AŞAĞIDAKI KİMİDİR. -->
+
+        <input id="input" v-model="active"/>
+        <button id="btn" class="btn" @click="add()" >Add</button>
+      </div>
+      <div>{{active}}</div>
+      <div id="mainDiv">
+        <li id="li" v-for="item in li">{{item}}</li>
+      </div>
+    </div>
+
+    <script src="vue.js"></script>
+  </body>
+</html>
